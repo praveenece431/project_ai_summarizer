@@ -17,7 +17,7 @@ spec:
       - name: ai-container
         image: 587861061090.dkr.ecr.us-east-1.amazonaws.com/ai:tagversion
         ports:
-        - containerPort: 3000
+        - containerPort: 3080
 ---
 apiVersion: v1
 kind: Service
@@ -31,4 +31,4 @@ spec:
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 3000
+    targetPort: 3080
